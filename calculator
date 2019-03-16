@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main()
+{
+    float a,b,v;
+    int op;
+    printf("Enter an integer strictly\n ");
+    printf("Enter a ");
+    scanf("%f",&a);
+    printf("Enter b ");
+    scanf("%f",&b);
+    
+    printf("Enter operation to perform\n 1.ADD \n 2.SUB \n3.MUL \n 4.DIV\n");
+    
+    scanf("%d",&op);
+    switch(op){
+        case 1:
+        v=a+b;
+        printf("The result is %f",v);
+        break;
+        case 2:
+        v=a-b;
+        printf("The result is %f",v);
+        break;
+        case 3:
+        v=a*b;
+        printf("The result is %f",v);
+        break;
+        case 4:
+        v=a/b;
+        printf("The result is %f",v);
+        break;
+    }
+    
+}
