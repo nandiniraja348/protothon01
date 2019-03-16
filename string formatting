@@ -1,0 +1,22 @@
+print("1.All caps")
+print("2.Small case")
+print("3.Title Case")
+print("4.Start Case")
+string=str(input("Enter a string"))
+b=[]
+a= string.split(' ')
+length=len(a)
+a=int(input("Enter the text formatter you need "))
+if(a==1):
+    c=string.upper()
+    print(c)
+if(a==2):
+    c=string.lower()
+    print(c)
+if(a==3):
+    c=string.title()
+    print(c)
+if(a==4):
+    c=string.capitalize()
+    print(c)
+    
