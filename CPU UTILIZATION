@@ -1,0 +1,13 @@
+BEFORE TIME SLEEP:
+import time
+a=[]
+while(1):
+    a.append(3)
+
+AFTER TIME SLEEP: 
+
+import time
+a=[]
+while(1):
+    time.sleep(1)
+    a.append(3)
