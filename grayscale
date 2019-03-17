@@ -1,0 +1,19 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import time
+def rgb_to_gray(img):
+        print(img)
+        R = np.array(img[:, :, 0])
+        G = np.array(img[:, :, 1])
+        B = np.array(img[:, :, 2])
+        avg = (R *.299)+(G *.587)+(B *.114)
+        for i in range(3):
+           grayImage[:,:,i] = avg
+
+        return grayImage       
+
+image = mpimg.imread("C:\\Users\\PROTOSEM_01\\Desktop\\Growth box\\download.png")  
+grayImage = rgb_to_gray(image)  
+plt.imshow(grayImage)
+plt.show()
